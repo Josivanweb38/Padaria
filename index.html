@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Padaria da Tia Mel</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="logo-removebg-preview.png" type="image/png"/>
+
+  <style>
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #fffdf6;
+  color: #4b3d2f;
+  line-height: 1.6;
+}
+
+header {
+  background: #f7c59f;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #4b3d2f;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4b3d2f;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-left: 6px solid #f7c59f;
+  padding-left: 0.5rem;
+}
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.produto {
+  flex: 1 1 250px;
+  background: #fff5e6;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.produto img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+footer {
+  background: #4b3d2f;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .produtos {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-nav">
+      <img src="logo-removebg-preview.png" alt="Logo da Padaria" class="logo"/>
+      <h1>Padaria da Tia Mel</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#local">Localização</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre Nós</h2>
+      <p>A Padaria da Tia Mel nasceu em 1998 com a missão de trazer o sabor do pão caseiro para o coração da cidade. Tudo começou com a Tia Mel, uma cozinheira apaixonada que vendia seus pães na vizinhança com muito carinho.</p>
+      <p>Com o tempo, a padaria se expandiu e virou referência em qualidade, carinho e tradição. Nossos produtos são feitos diariamente com ingredientes frescos e aquele toque especial que só a Tia Mel sabe dar.</p>
+      <p>Hoje, a Padaria da Tia Mel é um ponto de encontro de famílias, amigos e amantes da boa comida. Venha nos visitar e sentir o cheirinho de pão quentinho no ar!</p>
+    </section>
+
+    <section id="produtos">
+      <h2>Produtos</h2>
+      <div class="produtos">
+        <div class="produto">
+          <img src="pao-caseiro-para-iniciantes_02.jpg" alt="Pão Caseiro"/>
+          <h3>Pão Caseiro</h3>
+          <p>Macio, quentinho e feito com amor. Ideal para o café da manhã!</p>
+        </div>
+        <div class="produto">
+          <img src="OIP (1).jpg" alt="Bolo de Cenoura"/>
+          <h3>Bolo de Cenoura</h3>
+          <p>Clássico com cobertura de chocolate. O favorito da casa!</p>
+        </div>
+        <div class="produto">
+          <img src="OIP.jpg" alt="Broa de Milho"/>
+          <h3>Broa de Milho</h3>
+          <p>Receita tradicional com sabor de fazenda.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Email: <a href="mailto:contato@padariadatiamel.com">contato@padariadatiamel.com</a></p>
+      <p>Telefone: (11) 98765-4321</p>
+      <p>Instagram: <a href="https://instagram.com/padariadatiamel" target="_blank">@padariadatiamel</a></p>
+    </section>
+
+    <section id="local">
+      <h2>Localização</h2>
+      <p>Rua do Pão Quentinho, 123 - Centro, São Paulo - SP</p>
+      <iframe
+        src="https://www.google.com/maps?q=Rua+do+Pão+Quentinho,+123,+São+Paulo&output=embed"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Padaria da Tia Mel. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
